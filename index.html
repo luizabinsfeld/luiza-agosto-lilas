@@ -4,119 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agosto Lilás - Combate ao Cyberbullying</title>
-    <style>
-        /* Configurações gerais da página */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff; /* Fundo branco */
-            color: #000000; /* Fonte preta */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Container principal para centralizar o conteúdo */
-        .container {
-            width: 90%;
-            max-width: 900px;
-            padding: 40px 20px;
-        }
-
-        /* Estilo do Título (Tema) */
-        .tema {
-            background-color: #D8BFD8; /* Fundo lilás */
-            text-align: center;
-            padding: 20px;
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        /* Estilo da pequena introdução */
-        .introducao {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        /* Layout das 3 Divs (Grid/Flexbox) */
-        .cards-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        /* Estilo individual de cada DIV (os 3 quadrados) */
-        .card {
-            border: 2px solid #000000; /* Borda preta como no desenho */
-            background-color: #F8F8FF; /* Branco levemente puxado pro lilás */
-            flex: 1; /* Faz as 3 divs terem o mesmo tamanho */
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-
-        .card img {
-            max-width: 100%;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            color: #4B0082; /* Tom de roxo mais escuro para destaque no título da div */
-            margin-bottom: 10px;
-        }
-
-        /* Estilo da Informação abaixo das divs */
-        .informacao {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #E6E6FA; /* Fundo lilás claro */
-            border-radius: 5px;
-        }
-
-        /* Botão de curtir adaptado para a causa */
-        button {
-            background-color: #D8BFD8;
-            color: #000;
-            border: 2px solid #000;
-            padding: 10px 20px;
-            font-size: 1em;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #C3B1E1;
-        }
-
-        /* Rodapé com seu nome e dados */
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            font-weight: bold;
-            line-height: 1.6;
-            margin-top: 40px;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-        }
-
-        /* Responsividade para celulares */
-        @media (max-width: 768px) {
-            .cards-container {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <!-- Link para puxar o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -161,7 +50,7 @@
 
         </div>
 
-        <!-- Informação extra e Botão de Apoio (O antigo curtir do JS) -->
+        <!-- Informação extra e Botão de Apoio -->
         <div class="informacao">
             <h2>A violência virtual deixa marcas reais.</h2>
             <p>Você não está sozinha! Apoie esta causa e ajude a conscientizar mais pessoas compartilhando informações seguras.</p>
@@ -179,29 +68,7 @@
         </footer>
     </div>
 
-    <!-- Script JavaScript reestruturado -->
-    <script>
-        let curtiu = false;
-        let botao = document.getElementById("btnApoio");
-        let texto = document.getElementById("contador");
-
-        function botaoClicado() {
-            console.log("Botão de apoio clicado");
-
-            if (curtiu === false) {
-                // Se não curtiu, adiciona 1
-                texto.textContent = parseInt(texto.textContent) + 1;
-                curtiu = true;
-                botao.style.backgroundColor = "#9370DB"; // Fica com um lilás mais escuro ao clicar
-                botao.style.color = "#FFFFFF"; // Fonte branca ao clicar
-            } else {
-                // Se já curtiu, retira o curtir
-                texto.textContent = parseInt(texto.textContent) - 1;
-                curtiu = false;
-                botao.style.backgroundColor = "#D8BFD8"; // Volta pra cor normal
-                botao.style.color = "#000000"; // Volta a fonte preta
-            }
-        }
-    </script>
+    <!-- Link para puxar o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
